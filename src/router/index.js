@@ -150,6 +150,25 @@ export const constantRoutes = [
         meta: { title: ('route.dyzxzm'), icon: 'form' }
       },
       {
+        path: 'ckxxds',
+        component: () => import('@/views/pygl/dsyxs/ckxxds'),
+        name: 'ckxxds',
+        meta: { title: ('route.ckxxds'), icon: 'form' }
+      },
+      {
+        path: 'dscxll',
+        component: () => import('@/views/pygl/dsyxs/dscxll'),
+        name: 'dscxll',
+        meta: { title: ('route.dscxll'), icon: 'form' }
+      },
+      {
+        path: 'showTutorInfo',
+        hidden: true,
+        name: 'showTutorInfo',
+        component: () => import('@/views/pygl/dsyxs/showTutorInfo'),
+        meta: { title: 'route.ckxxds' }
+      },
+      {
         path: 'pyfacx',
         component: () => import('@/views/pygl/pyfayxsgrjh/pyfacx'),
         name: 'pyfacx',
@@ -249,6 +268,12 @@ export const constantRoutes = [
     meta: { title: ('route.byhxwgl'), icon: 'form' },
     children: [
       {
+        path: 'ckbyxwzt',
+        name: 'ckbyxwzt',
+        component: () => import('@/views/byhxwgl/ckbyxwzt'),
+        meta: { title: ('route.ckbyxwzt'), icon: 'form' }
+      },
+      {
         path: 'txxwxx',
         name: 'txxwxx',
         component: () => import('@/views/byhxwgl/txxwxx'),
@@ -337,10 +362,22 @@ export const constantRoutes = [
           icon: 'form',
           roles: [0]
         }
+      },
+      {// 毕业信息核对
+        path: 'byxxhd',
+        name: 'byxxhd',
+        component: () => import('@/views/byhxwgl/byxxhd'),
+        meta: { title: ('route.byxxhd'), icon: 'form' }
+      },
+      {
+        // 学位信息核对
+        path: 'xwxxhd',
+        name: 'xwxxhd',
+        component: () => import('@/views/byhxwgl/xwxxhd'),
+        meta: { title: ('route.xwxxhd'), icon: 'form' }
       }
     ]
   },
-
   {
     path: '/dagl',
     component: Layout,

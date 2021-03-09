@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function login(jsonForm) {
   return request({
-    url: '/api/apiLogin',
+    url: '/auth/webLogin',
     method: 'post',
     data: jsonForm
   })
@@ -12,7 +12,7 @@ export function getInfo() {
   return request({
     url: '/api/getInfo',
     method: 'post',
-    data:{}
+    data: {}
   })
 }
 
@@ -20,7 +20,7 @@ export function logout() {
   return request({
     url: '/api/logout',
     method: 'post',
-    data:{}
+    data: {}
   })
 }
 
@@ -48,7 +48,6 @@ export function getStudentTrainInfo() {
   })
 }
 
-
 export function updateStudentBaseicInfo(data) {
   return request({
     url: '/api/student/updateStudentBaseicInfo',
@@ -64,7 +63,6 @@ export function getStudentPreSchoolInfo() {
     data: {}
   })
 }
-
 
 export function updateStudentPreSchoolInfo(data) {
   return request({
@@ -120,7 +118,6 @@ export function showCourse(data) {
     data
   })
 }
-
 
 export function showCultivatePlan() {
   return request({

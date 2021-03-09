@@ -35,9 +35,8 @@ Vue.use(ElementUI, {
   i18n: (key, value) => i18n.t(key, value)
 })
 
-
 Vue.config.productionTip = false
-
+// Vue.use(G6,{ locale })
 Vue.use(VueAxios, axios)
 Vue.prototype.$axios = axios
 new Vue({

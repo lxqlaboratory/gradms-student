@@ -8,7 +8,6 @@ export function getStudentPreSchoolInfo() {
   })
 }
 
-
 export function updateStudentPreSchoolInfo(data) {
   return request({
     url: '/api/student/updateStudentPreSchoolInfo',

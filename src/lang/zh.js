@@ -48,6 +48,8 @@ export default {
     pygl: '培养管理',
     xjhpygl: '学籍和培养管理',
     dyzxzm: '打印在学证明',
+    ckxxds: '查看学院导师',
+    dscxll: '导师查询浏览',
     pyfayxsgrjh: '培养方案与学生个人计划',
     pyfacx: '培养方案查询',
     ckbrpyfa: '查看本人培养方案',
@@ -62,6 +64,7 @@ export default {
     tjktbg: '提交开题报告',
     byhxwgl: '毕业和学位管理',
     txxwxx: '填写学位信息',
+    ckbyxwzt: '查看毕业学位状态',
     txlwgzybz: '填写论文工作与不足',
     txbslwzpb: '填写博士论文自评表',
     tjbysq: '提交毕业申请',
@@ -110,6 +113,7 @@ export default {
     cultivationInformation: '培养信息',
     beforeSchool: '入学前信息',
     personalInformation: '个人基本信息',
+    graduationInformation: '拟毕业研究生信息核对',
     name: '姓名',
     englishName: '英文姓名',
     studentNumber: '学 号',
@@ -435,7 +439,65 @@ export default {
     compulsoryCourse: '必修课',
     delete: '删除'
   },
+  //查看导师
+  browseTutor: {
+    school: '学院',
+    research: '专业研究方向',
+    perName: '导师姓名',
+    note1: '请选择学院',
+    note2: '请输入专业或研究方向',
+    note3: '请输入导师姓名',
+    number: '序号',
+    title: '职称',
+    sex: '性 别',
+    age: '年龄',
+    degree: '学位',
+    email: '邮箱',
+    tutorType: '导师类型',
+    majorName: '专业',
+    researchDirection: '研究方向',
+    query: '查询',
+  },
 
+  //查看学院导师
+  browseSchoolTutor: {
+    type: '导师类别',
+    school: '学院',
+    perNum: '工号',
+    research: '专业研究方向',
+    perName: '导师姓名',
+    note1: '请选择学院',
+    note2: '请输入专业或研究方向',
+    note3: '请输入导师姓名',
+    number: '序号',
+    title: '职称',
+    sex: '性 别',
+    age: '年龄',
+    degree: '学位',
+    email: '邮箱',
+    tutorType: '导师类型',
+    majorName: '专业',
+    researchDirection: '研究方向',
+    query: '查询',
+    doctoralStudent: '在读博士生人数',
+    masterStudent: '在读硕士生人数',
+    applicationNumber: '申请数'
+  },
+  //显示导师信息
+  showTutor: {
+    baseinfo: '基本信息',
+    number: '编号',
+    name: '姓名',
+    sex: '性别',
+    school: '学院',
+    major: '专业',
+    title: '职称',
+    laststudy: '最后学历',
+    lastdegree: '最后学位',
+    email: '邮箱',
+    homepage: '主页',
+    direction: '研究方向'
+  },
   // 课程查询
   courseQuery: {
     school: '学院',
@@ -605,6 +667,23 @@ export default {
     DegreeVotesNot: '建议不授予学位票数', // 建议不授予学位票数
     ReviseAndRedefend: '建议修改论文重新答辩', // 建议修改论文重新答辩
     BackUp: '后退'
+  },
+  // 查看毕业学位状态
+  checkGraduationDegreeStatus: {
+    note1: '毕业学位流程说明:',
+    note2: '1.毕业学位流程起始状态为同意提交毕业申请，如果不是这个状态，无法开始正常的毕业流程，请联系学院秘书启动;',
+    note3: '2.学生在规定时间内提交毕业即可进入毕业学位流程，在毕业学位流程学生可登录系统查看自己的毕业学位状态，红色边框的状态，表示当前所处的状态;',
+    note4: '3.鼠标移动到状态框，有相应提示显示，如果屏幕大小受限制，可以用鼠标滑动浏览图形。'
+  },
+
+  // 学位信息核对
+  checkDegreeInformation: {
+    note1: '信息校对说明:',
+    note2: '1.以下是拟打印出来的学位证书，红色字体部分是需要核对的信息。',
+    note3: '2.请认真核对，如信息有误，及时和学院联系。',
+    DoctorDegree: '博士学位证书',
+    MasterDegree: '硕士学位证书'
+
   },
   // 课程查询
   CourseQuery: {

@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function getStudentBaseicInfo() {
   return request({
-    url: '/api/student/getStudentBaseicInfoData',
+    url: '/base/getPersonBaseInfo',
     method: 'POST',
     data: {}
   })
@@ -10,7 +10,7 @@ export function getStudentBaseicInfo() {
 
 export function updateStudentBaseicInfo(data) {
   return request({
-    url: '/api/student/updateStudentBaseicInfo',
+    url: '/studentms/studentBaseInfoMaintain',
     method: 'POST',
     data
   })

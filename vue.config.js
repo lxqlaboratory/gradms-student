@@ -37,11 +37,13 @@ module.exports = {
       //       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://localhost:8080/gradms`,
+        ws: false,
+        target: `http://localhost:8080/func/`,
         changeOrigin: true,
         pathRewrite: {
-          '^/gradms': '/'
+          ['^' + process.env.VUE_APP_BASE_API]: ''
         }
+
       }
     },
     after: require('./mock/mock-server.js')

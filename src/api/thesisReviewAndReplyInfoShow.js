@@ -8,7 +8,7 @@ export function thesisReviewAndReplyInfoShow() {
   })
 }
 
-//学位申请书
+// 学位申请书
 export function degreeThesisApplyDownload() {
   return request({
     url: '/api/degree/degreeThesisApplyDownload',
@@ -16,7 +16,7 @@ export function degreeThesisApplyDownload() {
     data: {}
   })
 }
-//学位审批书
+// 学位审批书
 export function degreeThesisApprovalDownload() {
   return request({
     url: '/api/degree/degreeThesisApprovalDownload',
@@ -25,7 +25,7 @@ export function degreeThesisApprovalDownload() {
   })
 }
 
-//答辩记录纸
+// 答辩记录纸
 export function degreethesisAnswerRecordDownload() {
   return request({
     url: '/api/degree/degreethesisAnswerRecordDownload',
@@ -34,7 +34,7 @@ export function degreethesisAnswerRecordDownload() {
   })
 }
 
-//毕业审批表
+// 毕业审批表
 export function degreeGraduationAuditFormDownload() {
   return request({
     url: '/api/degree/degreeGraduationAuditFormDownload',
@@ -42,7 +42,7 @@ export function degreeGraduationAuditFormDownload() {
     data: {}
   })
 }
-//博士申请登记表
+// 博士申请登记表
 export function degreePrintApplyTable() {
   return request({
     url: '/api/degree/degreePrintApplyTable',
@@ -51,7 +51,7 @@ export function degreePrintApplyTable() {
   })
 }
 
-//科研和奖励情况表
+// 科研和奖励情况表
 export function degreeResearchRewardFormDownload() {
   return request({
     url: '/api/degree/degreeResearchRewardFormDownload',
@@ -59,7 +59,7 @@ export function degreeResearchRewardFormDownload() {
     data: {}
   })
 }
-//博士自评表
+// 博士自评表
 export function downLoadZiPingBiao() {
   return request({
     url: '/api/degree/downLoadZiPingBiao',
@@ -68,7 +68,7 @@ export function downLoadZiPingBiao() {
   })
 }
 
-//学位论文终稿
+// 学位论文终稿
 export function degreeThesisAttachmentDownload() {
   return request({
     url: '/api/degree/degreeThesisAttachmentDownload',

@@ -48,6 +48,8 @@ export default {
     pygl: 'cultivation management',
     xjhpygl: 'status and cultivation',
     dyzxzm: 'print the education certificate',
+    ckxxds: 'Browse College Tutors',
+    dscxll: 'Browse Tutors',
     pyfayxsgrjh: 'cultivation and students\' plan',
     pyfacx: 'cultivation  inquiry',
     ckbrpyfa: 'cultivation scheme inquiry',
@@ -62,6 +64,7 @@ export default {
     tjktbg: 'submit opening report',
     byhxwgl: 'graduation and degree',
     txxwxx: 'degree information',
+    ckbyxwzt: 'check graduation degree status',
     txlwgzybz: 'work and shortcomings of paper',
     txbslwzpb: 'self-evaluation of doctoral thesis',
     tjbysq: 'graduation application',
@@ -70,8 +73,8 @@ export default {
     txbsdbgg: 'doctor oral defence announcement',
     lrdbjv: 'oral defence record input',
     pydbxxck: 'oral defence review',
-    byxxhd: 'check the graduatrion information',
-    xwxxhd: 'degree information check',
+    byxxhd: 'check graduatrion information',
+    xwxxhd: 'check degree information',
     dagl: 'archive management',
     txqnml: 'file directory',
     submit: 'submit',
@@ -111,6 +114,7 @@ export default {
     cultivationInformation: 'cultivation information',
     beforeSchool: 'before school information',
     personalInformation: 'personal information',
+    graduationInformation: 'check the graduation information',
     name: 'name',
     englishName: 'English name',
     studentNumber: 'student number',
@@ -424,6 +428,82 @@ export default {
     compulsoryCourse: ' Compulsory course',
     delete: 'delete'
   },
+   // 查看毕业学位状态
+  checkGraduationDegreeStatus: {
+    note1: 'Graduation degree process Description:',
+    note2: '1.The starting state of the graduation degree process is to agree to submit the graduation application. If you are not in this state and cannot start the normal graduation process, please contact the college secretary to start;',
+    note3: '2.Students can enter the graduation degree process by submitting graduation within the specified time. In the process of graduation degree, students can log in the system to check their graduation degree status. The state of the red border indicates the current state;',
+    note4: '3.When the mouse moves to the status box, the corresponding prompt will be displayed. If the screen size is limited, you can use the mouse to slide to browse the graph.'
+  },
+  // 学位信息核对
+  checkDegreeInformation: {
+    note1: 'Information proofreading instructions:',
+    note2: '1.The following is the degree certificate to be printed, with the information to be checked in red.',
+    note3: 'Please check the relevant information carefully. If information is incorrect, contact the college in time.',
+    DoctorDegree: 'Doctor Degree Certificate',
+    MasterDegree: 'Master Degree Certificate'
+  },
+
+  //查看导师
+  browseTutor: {
+    school: 'School',
+    research: 'Research Direction',
+    perName: 'Tutor Name',
+    note1: 'please choose a school',
+    note2: 'please enter the major or research direction',
+    note3: 'please enter the tutor name ',
+    number: 'Number',
+    title: 'Title',
+    sex: 'Sex',
+    age: 'Age',
+    degree: 'Degree',
+    email: 'Email',
+    tutorType: 'Tutor type',
+    majorName: 'Major',
+    researchDirection: 'Research direction',
+    query: 'query'
+  },
+
+  //查看学院导师
+  browseSchoolTutor: {
+    type: 'Tutor type',
+    school: 'School',
+    research: 'Research Direction',
+    perNum: 'Work number',
+    perName: 'Tutor Name',
+    note1: 'please choose a school',
+    note2: 'please enter the major or research direction',
+    note3: 'please enter the tutor name ',
+    number: 'Number',
+    title: 'Title',
+    sex: 'Sex',
+    age: 'Age',
+    degree: 'Degree',
+    email: 'Email',
+    tutorType: 'Tutor type',
+    majorName: 'Major',
+    researchDirection: 'Research direction',
+    query: 'query',
+    doctoralStudent: 'Number of doctoral Candidates',
+    masterStudent: 'Number of postgraduate students',
+    applicationNumber: 'Number of Applicants'
+  },
+
+  //显示导师信息
+  showTutor: {
+    baseinfo: 'Base Infomation',
+    number: 'Number',
+    name: 'Name',
+    sex: 'Sex',
+    school: 'School',
+    major: 'Major',
+    title: 'Title',
+    laststudy: 'Last Study Level',
+    lastdegree: 'Last Degree',
+    email: 'Email',
+    homepage: 'Home Page',
+    direction: 'Research Direction'
+  },
 
   // 课程查询
   courseQuery: {
@@ -697,18 +777,18 @@ export default {
     series:'series number',
     startPage:'Start page',
     endPage:'End page',
-    CollectingWays:'Ways of collection',
+    CollectingWays:' Ways of collection',
     enterEI:'Enter EI searching number',
-    remark:'remark',
+    remark:'remark'
   },
   //说明
   statement:{
     discript: 'Description',
-    note1:'For those applying to graduate this semester,please choose yes and submit',
-    note2:'For those who do not apply to graduate this semester,please do not operate',
-    note3:'For those who apply to graduate, please fill in and confirm the student status information and degree information',
-    note4:'This information is used for national offers,please fill in seriously',
-    note5:'Please read the statement carefully before you fill in',
-    note:'You can only submit the graduation application from 2017-02-02 08:00 to 2019-12-31 17:01:01, please fill in the application immediately',
+    note1: 'For those applying to graduate this semester,please choose yes and submit',
+    note2: 'For those who do not apply to graduate this semester,please do not operate',
+    note3: 'For those who apply to graduate, please fill in and confirm the student status information and degree information',
+    note4: 'This information is used for national offers,please fill in seriously',
+    note5: 'Please read the statement carefully before you fill in',
+    note: 'You can only submit the graduation application from 2017-02-02 08:00 to 2019-12-31 17:01:01, please fill in the application immediately'
   }
 }

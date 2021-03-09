@@ -14,13 +14,13 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="15%" class="colstyle1">
+                  <td width="20%" class="colstyle1">
                     {{ $t('baseInformationModal.name') }}
                   </td>
                   <td class="colstyle2">
                     {{ list.perName }}
                   </td>
-                  <td width="20%" class="colstyle1">
+                  <td width="15%" class="colstyle1">
                     {{ $t('baseInformationModal.englishName') }}
                   </td>
                   <td v-if="isEdit" width="25%" class="colstyle2">
@@ -44,7 +44,7 @@
                     {{ $t('baseInformationModal.sex') }}
                   </td>
                   <td class="colstyle2">
-                    {{ $t(list.genderCode) }}
+                    {{ $t(list.sex) }}
                   </td>
                 </tr>
                 <tr>

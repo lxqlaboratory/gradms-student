@@ -15,6 +15,7 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
+    "@antv/g6": "^3.8.0",
     "axios": "^0.19.0",
     "element-ui": "2.7.2",
     "file-saver": "^2.0.2",

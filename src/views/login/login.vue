@@ -16,7 +16,7 @@
                <span class="svg-container" >
                <svg-icon icon-class="user" style="margin-top: 10px ;" />
                </span>
-              <input v-model="loginForm.userName" :placeholder="$t('login.placeholdUsername')" maxlength="12" class="login-form-input" style="width: 91%">
+              <input v-model="loginForm.loginName" :placeholder="$t('login.placeholdUsername')" maxlength="12" class="login-form-input" style="width: 91%">
             </div>
             <div style="position: relative;width: 100%;margin-top: 30px;">
                <span class="svg-container">
@@ -96,7 +96,7 @@ export default {
       showPassword: false,
       loading: false,
       loginForm: {
-        userName: '',
+        loginName: '',
         password: ''
       },
       ydxy: true,
@@ -143,7 +143,7 @@ export default {
           // 清空Cookie
           _this.clearCookie()
         }
-        const jsonForm = JSON.stringify({ username: this.loginForm.userName, password: this.loginForm.password })
+        const jsonForm = JSON.stringify({ loginName: this.loginForm.loginName, password: this.loginForm.password })
         login(jsonForm).then(response => {
         // console.log(response.msg);
           _this.msg = response.msg
